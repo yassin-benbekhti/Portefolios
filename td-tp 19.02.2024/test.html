@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-site avec Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-style: italic;">Portfolios</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Étudiants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="photoyassin.jpg" class="card-img-top" alt="Photo Etudiant 1">
+                <div class="card-body">
+                    <h5 class="card-title">Yassin benbekhti</h5>
+                    <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="experiences-tab1" data-bs-toggle="tab" data-bs-target="#experiences1" type="button" role="tab" aria-controls="experiences1" aria-selected="true">Expériences</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="education-tab1" data-bs-toggle="tab" data-bs-target="#education1" type="button" role="tab" aria-controls="education1" aria-selected="false">Éducation</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="competences-tab1" data-bs-toggle="tab" data-bs-target="#competences1" type="button" role="tab" aria-controls="competences1" aria-selected="false">Compétences</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent1">
+                        <div class="tab-pane fade show active" id="experiences1" role="tabpanel" aria-labelledby="experiences-tab1">
+                            
+                            <ul class="list-group mt-3">
+                                <li class="list-group-item">Expérience 1</li>
+                                <li class="list-group-item">Expérience 2</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="education1" role="tabpanel" aria-labelledby="education-tab1">
+                           
+                            <ul class="list-group mt-3">
+                                <li class="list-group-item">Diplôme 1</li>
+                                <li class="list-group-item">Diplôme 2</li>
+                                
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompetences">
+                            Voir compétences
+                        </button>
+                        <!-- Fenêtre modale des compétences -->
+                        <div class="modal fade" id="modalCompetences" tabindex="-1" aria-labelledby="modalCompetencesLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalCompetencesLabel">Compétences</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Contenu des compétences -->
+                                        <p>Compétence 1: ...</p>
+                                        <p>Compétence 2: ...</p>
+                                        <p>Compétence 3: ...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <a href="https://www.linkedin.com/in/yassin-benbekhti-2a49b52b5/" target="_blank">
+                        <img src="linkedin.jpg"  alt="" width="100">
+                    </a>
+                    <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modal1">
+                        Voir lettre de motivation
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <p>travaux effectuer</p>
+           <!-- Carrousel pour les images de projets ou d'expériences -->
+           <div id="carouselExampleSlidesOnly" class="carousel slide mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image1.png" class="d-block w-100" alt="Image Projet 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="image2.png" class="d-block w-100" alt="Image Projet 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="image3.png" class="d-block w-100" alt="Image Projet 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Lettre de motivation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <p>OBJET : candidature spontanée pour un stage de 3 mois </p>
+
+                <p>a l’intention du Service Communication de l’UPHF,</p>
+
+ <p>Je souhaite travailler avec vous au sein de la communication web de l'Université car pour moi, travailler avec votre équipe est une occasion unique de mettre en pratique mes compétences en programmation tout en découvrant et contribuant à la diffusion efficace et attrayante des informations et des ressources de l’université. En effet, votre service me permettrait de participer à des projets stimulants où je pourrais développer mes connaissances techniques tout en contribuant de manière significative à l'image de l'institution. Je suis très motivé et enthousiaste à l'idée de collaborer avec votre équipe dynamique pour développer la communication au sein du campus.
+Ayant toujours voulu travailler dans le secteur de l'informatique, j'ai fait le choix de m'orienter vers des formations qui m’ont permis d’acquérir des connaissances dans les langages de programmation tels que la programmation logicielle (C, C++, JAVA), le développement web (back-end, front-end : PHP, HTML, CSS, JavaScript), la programmation mobile (Kotlin, React, Flutter) et la gestion des bases de données (SQL). Ce qui me paraît être pertinent pour votre secteur d'activité qui est la communication via les outils numériques. C’est donc pour cette raison que je me suis tout naturellement tourné vers vous pour effectuer mon stage.
+Au cours de mes formations, j'ai pu développer certaines qualités telles que la curiosité pour les nouvelles innovations technologiques ainsi qu’une rigueur dans le travail apporté, ce qui me semble essentiel dans le domaine de l'informatique. Effectuer mon stage au sein de votre entreprise me permettra d'assimiler d'autres qualités telles que le sens du travail d'équipe et la capacité d'adaptation aux diverses situations.
+Dans l’attente de votre réponse pour pouvoir vous exprimer ma pleine motivation, je vous prie d'agréer, Madame, Monsieur, l’expression de mes salutations distinguées.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
